@@ -117,7 +117,7 @@ export default function FloatingContact() {
       <button
         onClick={() => setIsOpen(!isOpen)}
         className={cn(
-          "relative flex items-center justify-center w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-4 focus:ring-green-300",
+          "relative flex items-center justify-center w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 focus:outline-none ",
           isOpen ? "rotate-45" : "",
         )}
         aria-label="Contact"
