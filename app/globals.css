@@ -147,4 +147,39 @@
     font-family: "Futura", "Futura PT", "Futura Std", "Century Gothic", "Inter", "Avenir Next", "Helvetica Neue",
       "Arial", sans-serif;
   }
+
+  /* Custom animations for floating contact */
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  /* Slide in animations */
+  @keyframes slide-in-from-bottom {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-in {
+    animation-fill-mode: both;
+  }
+
+  .slide-in-from-bottom-2 {
+    animation: slide-in-from-bottom 0.3s ease-out;
+  }
 }

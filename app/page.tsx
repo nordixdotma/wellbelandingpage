@@ -6,6 +6,7 @@ import ClientSection from "@/components/client-section"
 import ExperienceSection from "@/components/experience-section"
 import RevolutionSection from "@/components/revolution-section"
 import Footer from "@/components/footer"
+import FloatingContact from "@/components/floating-contact"
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <ExperienceSection />
       <RevolutionSection />
       <Footer />
+      <FloatingContact />
     </main>
   )
 }
