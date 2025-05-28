@@ -49,7 +49,7 @@ export default function ProSection() {
         {/* Image and content */}
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <AnimatedElement animation="slideLeft" delay={200} triggerOnce={false}>
-            <div className="relative h-[400px] md:h-[500px] rounded-lg overflow-hidden">
+            <div className="relative h-[350px] md:h-[500px] rounded-lg overflow-hidden">
               <Image
                 src="/V2.svg?height=1000&width=800&query=professional hairstylist working in luxury salon"
                 alt="Beauty Professional"

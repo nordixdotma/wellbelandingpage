@@ -42,7 +42,7 @@ export default function RevolutionSection() {
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <AnimatedElement animation="slideLeft" delay={300} triggerOnce={false}>
-            <div className="relative h-[500px] md:h-[600px] rounded-lg overflow-hidden">
+            <div className="relative h-[400px] md:h-[500px] rounded-lg overflow-hidden">
               <Image
                 src="https://images.unsplash.com/photo-1553544260-f87e671974ee?q=80&w=2007&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?height=1200&width=800&query=modern beauty salon with technology integration and happy clients"
                 alt="WELLBE Revolution"
