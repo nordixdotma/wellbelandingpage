@@ -15,7 +15,7 @@ export default function Footer() {
                 alt="WELLBE Logo"
                 width={140}
                 height={40}
-                className="h-10 w-auto mb-4"
+                className="h-12 w-auto mb-4"
               />
               <p className="text-sm text-white/80 max-w-xs mb-4">
                 La première plateforme beauté au Maroc qui connecte les clients aux meilleurs professionnels de beauté.

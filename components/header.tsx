@@ -58,7 +58,7 @@ export default function Header() {
                     width={140}
                     height={40}
                     className={cn(
-                      "h-10 w-auto transition-opacity duration-300",
+                      "h-12 w-auto transition-opacity duration-300",
                       scrolled ? "opacity-0" : "opacity-100",
                     )}
                     priority
@@ -70,7 +70,7 @@ export default function Header() {
                     width={140}
                     height={40}
                     className={cn(
-                      "h-10 w-auto absolute top-0 left-0 transition-opacity duration-300",
+                      "h-12 w-auto absolute top-0 left-0 transition-opacity duration-300",
                       scrolled ? "opacity-100" : "opacity-0",
                     )}
                     priority
@@ -155,7 +155,7 @@ export default function Header() {
                 alt="WELLBE Logo"
                 width={140}
                 height={40}
-                className="h-10 w-auto"
+                className="h-12 w-auto"
               />
               <button onClick={() => setMobileMenuOpen(false)} className="p-2 text-gray-600 hover:text-gray-900">
                 <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
