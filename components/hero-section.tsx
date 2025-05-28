@@ -41,7 +41,7 @@ export default function HeroSection() {
             <AnimatedElement animation="slideRight" delay={1000}>
               <Link
                 href="#professionnels"
-                className="btn-shine w-full sm:w-auto inline-flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-[#002366] hover:bg-[#001c52] transition-colors"
+                className="btn-shine w-full sm:w-auto inline-flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium border-[#002366] rounded-md text-white bg-[#002366] hover:bg-[#001c52] transition-colors"
               >
                 Je suis un professionnel
               </Link>
