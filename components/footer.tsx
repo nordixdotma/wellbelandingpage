@@ -11,7 +11,7 @@ export default function Footer() {
           <AnimatedElement animation="slideLeft" delay={100} triggerOnce={false}>
             <div>
               <Image
-                src="/placeholder.svg?height=40&width=140&query=WELLBE logo white"
+                src="/logo-white.png?height=40&width=140&query=WELLBE logo white"
                 alt="WELLBE Logo"
                 width={140}
                 height={40}

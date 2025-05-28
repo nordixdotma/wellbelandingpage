@@ -51,7 +51,7 @@ export default function ProSection() {
           <AnimatedElement animation="slideLeft" delay={200} triggerOnce={false}>
             <div className="relative h-[400px] md:h-[500px] rounded-lg overflow-hidden">
               <Image
-                src="/placeholder.svg?height=1000&width=800&query=professional hairstylist working in luxury salon"
+                src="/V2.svg?height=1000&width=800&query=professional hairstylist working in luxury salon"
                 alt="Beauty Professional"
                 fill
                 className="object-cover"

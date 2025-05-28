@@ -53,7 +53,7 @@ export default function Header() {
                 <Link href="/" className="flex items-center relative">
                   {/* Logo for transparent header (white logo) */}
                   <Image
-                    src="/placeholder.svg?height=40&width=140&query=WELLBE logo white"
+                    src="/logo-white.png?height=40&width=140&query=WELLBE logo white"
                     alt="WELLBE Logo"
                     width={140}
                     height={40}
@@ -65,7 +65,7 @@ export default function Header() {
                   />
                   {/* Logo for scrolled header (dark logo) */}
                   <Image
-                    src="/placeholder.svg?height=40&width=140&query=WELLBE logo dark"
+                    src="/logo-blue.png?height=40&width=140&query=WELLBE logo dark"
                     alt="WELLBE Logo"
                     width={140}
                     height={40}
@@ -151,7 +151,7 @@ export default function Header() {
             {/* Header with logo and close button */}
             <div className="flex items-center justify-between p-6 border-b">
               <Image
-                src="/placeholder.svg?height=40&width=140&query=WELLBE logo dark"
+                src="/logo-blue.png?height=40&width=140&query=WELLBE logo dark"
                 alt="WELLBE Logo"
                 width={140}
                 height={40}

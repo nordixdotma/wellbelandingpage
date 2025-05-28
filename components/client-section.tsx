@@ -66,7 +66,7 @@ export default function ClientSection() {
           <AnimatedElement animation="slideRight" delay={300} triggerOnce={false}>
             <div className="relative h-[400px] md:h-[500px] rounded-lg overflow-hidden">
               <Image
-                src="/placeholder.svg?height=1000&width=800&query=happy client receiving beauty treatment in luxury salon"
+                src="/V3.svg?height=1000&width=800&query=happy client receiving beauty treatment in luxury salon"
                 alt="Beauty Client"
                 fill
                 className="object-cover"
