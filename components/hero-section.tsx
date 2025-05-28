@@ -49,7 +49,7 @@ export default function HeroSection() {
             <AnimatedElement animation="slideLeft" delay={1200}>
               <Link
                 href="#clients"
-                className="btn-fill w-full sm:w-auto inline-flex justify-center items-center px-6 py-3 border border-[#002366] text-base font-medium rounded-md text-white hover:bg-white/10 transition-colors"
+                className="btn-fill w-full sm:w-auto inline-flex justify-center items-center px-6 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-white/10 transition-colors"
               >
                 Je suis un client
               </Link>
