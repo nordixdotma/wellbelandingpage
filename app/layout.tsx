@@ -6,7 +6,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "WELLBE - La Première Plateforme Beauté au Maroc",
+  title: "WELLBE",
   description: "Réservez vos prestations beauté en quelques clics. À tout moment. Chez les meilleurs professionnels.",
 }
 
