@@ -39,6 +39,7 @@ export default function ExperienceSection() {
 
         <StaggeredAnimation
           staggerDelay={150}
+          mobileStaggerDelay={75}
           animation="scaleIn"
           className="grid md:grid-cols-3 gap-8 mt-12"
           triggerOnce={false}

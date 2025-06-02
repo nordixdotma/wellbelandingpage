@@ -75,6 +75,7 @@ export default function Form({ fields, buttonText, onSubmit }: FormProps) {
           <form onSubmit={handleSubmit} className="p-4 sm:p-8 space-y-4">
             <StaggeredAnimation
               staggerDelay={50}
+              mobileStaggerDelay={25}
               animation="slideUp"
               className="grid grid-cols-1 sm:grid-cols-2 gap-4"
               triggerOnce={false}

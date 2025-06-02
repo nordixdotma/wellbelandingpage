@@ -60,6 +60,7 @@ export default function RevolutionSection() {
             </AnimatedElement>
             <StaggeredAnimation
               staggerDelay={100}
+              mobileStaggerDelay={50}
               animation="scaleIn"
               className="grid grid-cols-2 gap-4"
               triggerOnce={false}

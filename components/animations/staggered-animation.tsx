@@ -1,5 +1,7 @@
 "use client"
 
+import type React from "react"
+
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 import type { ReactNode } from "react"
 
@@ -7,6 +9,7 @@ interface StaggeredAnimationProps {
   children: ReactNode[]
   animation?: "slideUp" | "slideDown" | "slideLeft" | "slideRight" | "fadeIn" | "scaleIn"
   staggerDelay?: number
+  mobileStaggerDelay?: number
   duration?: number
   className?: string
   triggerOnce?: boolean
@@ -16,6 +19,7 @@ export default function StaggeredAnimation({
   children,
   animation = "slideUp",
   staggerDelay = 100,
+  mobileStaggerDelay,
   duration = 600,
   className,
   triggerOnce = false,
@@ -24,7 +28,6 @@ export default function StaggeredAnimation({
 
   const getAnimationClasses = (index: number) => {
     const baseClasses = "transition-all ease-out"
-    const delay = index * staggerDelay
 
     if (!isVisible) {
       switch (animation) {
@@ -48,14 +51,23 @@ export default function StaggeredAnimation({
     return `${baseClasses} transform translate-y-0 translate-x-0 scale-100 opacity-100`
   }
 
+  const getStaggerDelay = (index: number) => {
+    // Use mobile delay if provided and screen is small, otherwise use regular delay
+    const effectiveDelay =
+      mobileStaggerDelay !== undefined && typeof window !== "undefined" && window.innerWidth < 768
+        ? mobileStaggerDelay
+        : staggerDelay
+    return index * effectiveDelay
+  }
+
   return (
-    <div ref={ref} className={className}>
+    <div ref={ref as React.RefObject<HTMLDivElement>} className={className}>
       {children.map((child, index) => (
         <div
           key={index}
           className={getAnimationClasses(index)}
           style={{
-            transitionDelay: `${index * staggerDelay}ms`,
+            transitionDelay: `${getStaggerDelay(index)}ms`,
             transitionDuration: `${duration}ms`,
           }}
         >

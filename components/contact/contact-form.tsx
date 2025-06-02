@@ -84,7 +84,12 @@ export default function ContactForm() {
         </div>
 
         <form onSubmit={handleSubmit} className="p-3 sm:p-6 space-y-3 sm:space-y-4">
-          <StaggeredAnimation staggerDelay={50} animation="slideUp" className="space-y-3 sm:space-y-4">
+          <StaggeredAnimation
+            staggerDelay={50}
+            mobileStaggerDelay={25}
+            animation="slideUp"
+            className="space-y-3 sm:space-y-4"
+          >
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
               <div className="space-y-1 sm:space-y-2">
                 <Label

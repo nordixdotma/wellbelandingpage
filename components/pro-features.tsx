@@ -47,6 +47,7 @@ export default function ProFeatures() {
 
         <StaggeredAnimation
           staggerDelay={150}
+          mobileStaggerDelay={75}
           animation="scaleIn"
           className="grid md:grid-cols-3 gap-8"
           triggerOnce={false}
