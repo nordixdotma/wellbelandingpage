@@ -18,7 +18,7 @@ export default function ContactHero() {
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="max-w-2xl">
           <AnimatedElement animation="slideUp" delay={200}>
-            <div className="inline-block rounded-full px-2 py-1 sm:px-3 sm:py-2 text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-white bg-[#002366] mb-6">
+            <div className="inline-block rounded-full mt-5 px-2 py-1 sm:px-3 sm:py-2 text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-white bg-[#002366] mb-6">
               CONTACTEZ-NOUS
             </div>
           </AnimatedElement>

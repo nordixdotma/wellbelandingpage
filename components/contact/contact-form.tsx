@@ -58,14 +58,14 @@ export default function ContactForm() {
   if (isSubmitted) {
     return (
       <AnimatedElement animation="scaleIn" delay={100}>
-        <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-8 text-center">
-          <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-4 sm:p-8 text-center">
+          <div className="w-12 h-12 sm:w-16 sm:h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg className="w-6 h-6 sm:w-8 sm:h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
             </svg>
           </div>
-          <h3 className="text-xl font-semibold text-gray-900 mb-2">Message Envoyé !</h3>
-          <p className="text-gray-600">
+          <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">Message Envoyé !</h3>
+          <p className="text-sm sm:text-base text-gray-600">
             Merci pour votre message. Notre équipe vous contactera dans les plus brefs délais.
           </p>
         </div>
@@ -76,19 +76,22 @@ export default function ContactForm() {
   return (
     <AnimatedElement animation="slideLeft" delay={200}>
       <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
-        <div className="bg-gradient-to-br from-[#002366] to-[#003d99] p-6">
-          <h3 className="text-xl font-semibold text-white mb-2">Envoyez-nous un Message</h3>
-          <p className="text-white/80 text-sm">
+        <div className="bg-gradient-to-br from-[#002366] to-[#003d99] p-3 sm:p-6">
+          <h3 className="text-lg sm:text-xl font-semibold text-white mb-1 sm:mb-2">Envoyez-nous un Message</h3>
+          <p className="text-white/80 text-xs sm:text-sm">
             Remplissez le formulaire ci-dessous et nous vous répondrons rapidement.
           </p>
         </div>
 
-        <form onSubmit={handleSubmit} className="p-6 space-y-4">
-          <StaggeredAnimation staggerDelay={50} animation="slideUp" className="space-y-4">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="space-y-2">
-                <Label htmlFor="fullName" className="text-sm font-medium text-gray-700 flex items-center gap-2">
-                  <User className="h-4 w-4 text-gray-400" />
+        <form onSubmit={handleSubmit} className="p-3 sm:p-6 space-y-3 sm:space-y-4">
+          <StaggeredAnimation staggerDelay={50} animation="slideUp" className="space-y-3 sm:space-y-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+              <div className="space-y-1 sm:space-y-2">
+                <Label
+                  htmlFor="fullName"
+                  className="text-xs sm:text-sm font-medium text-gray-700 flex items-center gap-1 sm:gap-2"
+                >
+                  <User className="h-3 w-3 sm:h-4 sm:w-4 text-gray-400" />
                   Nom complet *
                 </Label>
                 <Input
@@ -98,13 +101,16 @@ export default function ContactForm() {
                   value={formData.fullName}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#002366] focus:border-transparent transition-all duration-200"
+                  className="w-full px-2 sm:px-4 py-2 sm:py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#002366] focus:border-transparent transition-all duration-200 text-xs sm:text-base"
                 />
               </div>
 
-              <div className="space-y-2">
-                <Label htmlFor="email" className="text-sm font-medium text-gray-700 flex items-center gap-2">
-                  <Mail className="h-4 w-4 text-gray-400" />
+              <div className="space-y-1 sm:space-y-2">
+                <Label
+                  htmlFor="email"
+                  className="text-xs sm:text-sm font-medium text-gray-700 flex items-center gap-1 sm:gap-2"
+                >
+                  <Mail className="h-3 w-3 sm:h-4 sm:w-4 text-gray-400" />
                   Email *
                 </Label>
                 <Input
@@ -114,15 +120,18 @@ export default function ContactForm() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#002366] focus:border-transparent transition-all duration-200"
+                  className="w-full px-2 sm:px-4 py-2 sm:py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#002366] focus:border-transparent transition-all duration-200 text-xs sm:text-base"
                 />
               </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="space-y-2">
-                <Label htmlFor="phone" className="text-sm font-medium text-gray-700 flex items-center gap-2">
-                  <Phone className="h-4 w-4 text-gray-400" />
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+              <div className="space-y-1 sm:space-y-2">
+                <Label
+                  htmlFor="phone"
+                  className="text-xs sm:text-sm font-medium text-gray-700 flex items-center gap-1 sm:gap-2"
+                >
+                  <Phone className="h-3 w-3 sm:h-4 sm:w-4 text-gray-400" />
                   Téléphone
                 </Label>
                 <Input
@@ -131,13 +140,16 @@ export default function ContactForm() {
                   placeholder="+212 6XX XXX XXX"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#002366] focus:border-transparent transition-all duration-200"
+                  className="w-full px-2 sm:px-4 py-2 sm:py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#002366] focus:border-transparent transition-all duration-200 text-xs sm:text-base"
                 />
               </div>
 
-              <div className="space-y-2">
-                <Label htmlFor="company" className="text-sm font-medium text-gray-700 flex items-center gap-2">
-                  <Building className="h-4 w-4 text-gray-400" />
+              <div className="space-y-1 sm:space-y-2">
+                <Label
+                  htmlFor="company"
+                  className="text-xs sm:text-sm font-medium text-gray-700 flex items-center gap-1 sm:gap-2"
+                >
+                  <Building className="h-3 w-3 sm:h-4 sm:w-4 text-gray-400" />
                   Entreprise/Salon
                 </Label>
                 <Input
@@ -146,14 +158,17 @@ export default function ContactForm() {
                   placeholder="Nom de votre entreprise"
                   value={formData.company}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#002366] focus:border-transparent transition-all duration-200"
+                  className="w-full px-2 sm:px-4 py-2 sm:py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#002366] focus:border-transparent transition-all duration-200 text-xs sm:text-base"
                 />
               </div>
             </div>
 
-            <div className="space-y-2">
-              <Label htmlFor="subject" className="text-sm font-medium text-gray-700 flex items-center gap-2">
-                <MessageSquare className="h-4 w-4 text-gray-400" />
+            <div className="space-y-1 sm:space-y-2">
+              <Label
+                htmlFor="subject"
+                className="text-xs sm:text-sm font-medium text-gray-700 flex items-center gap-1 sm:gap-2"
+              >
+                <MessageSquare className="h-3 w-3 sm:h-4 sm:w-4 text-gray-400" />
                 Sujet *
               </Label>
               <Input
@@ -163,12 +178,12 @@ export default function ContactForm() {
                 value={formData.subject}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#002366] focus:border-transparent transition-all duration-200"
+                className="w-full px-2 sm:px-4 py-2 sm:py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#002366] focus:border-transparent transition-all duration-200 text-xs sm:text-base"
               />
             </div>
 
-            <div className="space-y-2">
-              <Label htmlFor="message" className="text-sm font-medium text-gray-700">
+            <div className="space-y-1 sm:space-y-2">
+              <Label htmlFor="message" className="text-xs sm:text-sm font-medium text-gray-700">
                 Message *
               </Label>
               <Textarea
@@ -178,19 +193,19 @@ export default function ContactForm() {
                 onChange={handleChange}
                 required
                 rows={5}
-                className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#002366] focus:border-transparent transition-all duration-200 resize-none"
+                className="w-full px-2 sm:px-4 py-2 sm:py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#002366] focus:border-transparent transition-all duration-200 resize-none text-xs sm:text-base"
               />
             </div>
 
             <Button
               type="submit"
               disabled={isLoading}
-              className="w-full bg-gradient-to-r from-[#002366] to-[#003d99] hover:from-[#001c52] hover:to-[#002d7a] text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-[1.02] disabled:opacity-50 disabled:scale-100"
+              className="w-full bg-gradient-to-r from-[#002366] to-[#003d99] hover:from-[#001c52] hover:to-[#002d7a] text-white font-semibold py-2 sm:py-3 px-4 sm:px-6 rounded-lg transition-all duration-200 transform hover:scale-[1.02] disabled:opacity-50 disabled:scale-100 text-xs sm:text-base"
             >
               {isLoading ? (
                 <div className="flex items-center justify-center gap-2">
-                  <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
-                  <span>Envoi en cours...</span>
+                  <div className="w-3 h-3 sm:w-4 sm:h-4 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
+                  <span className="text-xs sm:text-base">Envoi en cours...</span>
                 </div>
               ) : (
                 "Envoyer le Message"
