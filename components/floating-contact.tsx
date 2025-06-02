@@ -17,13 +17,6 @@ export default function FloatingContact() {
 
   const contactOptions = [
     {
-      icon: Phone,
-      label: "Téléphone",
-      href: "tel:+212123456789",
-      color: "bg-blue-500 hover:bg-blue-600",
-      delay: "delay-75",
-    },
-    {
       icon: WhatsAppIcon,
       label: "WhatsApp",
       href: "https://wa.me/212123456789",
