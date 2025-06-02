@@ -4,7 +4,7 @@ export default function ContactHero() {
   return (
     <section className="relative h-[60vh] flex items-center overflow-hidden">
       <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover z-0">
-        <source src="/placeholder.mp4" type="video/mp4" />
+        <source src="/V1.mp4" type="video/mp4" />
         {/* Fallback image if video doesn't load */}
         <div
           className="absolute inset-0 bg-cover bg-center"
