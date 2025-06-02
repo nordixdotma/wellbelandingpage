@@ -88,7 +88,7 @@ export default function Header() {
                   { label: "Professionnels", href: "#professionnels" },
                   { label: "Clients", href: "#clients" },
                   { label: "Pourquoi nous rejoindre?", href: "#pourquoi-rejoindre" },
-                  { label: "Contact", href: "#contact" },
+                  { label: "Contact", href: "/contact" },
                 ].map((item, index) => (
                   <Link
                     key={item.label}
@@ -178,7 +178,7 @@ export default function Header() {
                   { label: "Professionnels", href: "#professionnels" },
                   { label: "Clients", href: "#clients" },
                   { label: "Pourquoi nous rejoindre?", href: "#pourquoi-rejoindre" },
-                  { label: "Contact", href: "#contact" },
+                  { label: "Contact", href: "/contact" },
                 ].map((item) => (
                   <div key={item.label} className="block">
                     <Link
