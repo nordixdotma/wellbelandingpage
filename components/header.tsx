@@ -83,17 +83,23 @@ export default function Header() {
 
             <AnimatedElement animation="slideUp" delay={200} triggerOnce={false}>
               <nav className="hidden md:flex space-x-8">
-                {["Accueil", "Professionnels", "Clients", "Pourquoi nous rejoindre?", "Contact"].map((item, index) => (
+                {[
+                  { label: "Accueil", href: "#" },
+                  { label: "Professionnels", href: "#professionnels" },
+                  { label: "Clients", href: "#clients" },
+                  { label: "Pourquoi nous rejoindre?", href: "#pourquoi-rejoindre" },
+                  { label: "Contact", href: "#contact" },
+                ].map((item, index) => (
                   <Link
-                    key={item}
-                    href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
+                    key={item.label}
+                    href={item.href}
                     className={cn(
                       "text-base font-medium transition-colors relative group inline-block",
                       scrolled ? "text-gray-800 hover:text-[#002366]" : "text-white hover:text-gray-200",
                     )}
                     style={{ transitionDelay: `${index * 50}ms` }}
                   >
-                    {item}
+                    {item.label}
                     <span
                       className={cn(
                         "absolute bottom-0 left-1/2 w-0 h-0.5 transition-all duration-300 group-hover:w-full group-hover:left-0",
@@ -167,14 +173,20 @@ export default function Header() {
             {/* Navigation links */}
             <nav className="flex-1 px-6 py-8">
               <div className="space-y-6">
-                {["Accueil", "Professionnels", "Clients", "Pourquoi nous rejoindre?", "Contact"].map((item) => (
-                  <div key={item} className="block">
+                {[
+                  { label: "Accueil", href: "#" },
+                  { label: "Professionnels", href: "#professionnels" },
+                  { label: "Clients", href: "#clients" },
+                  { label: "Pourquoi nous rejoindre?", href: "#pourquoi-rejoindre" },
+                  { label: "Contact", href: "#contact" },
+                ].map((item) => (
+                  <div key={item.label} className="block">
                     <Link
-                      href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
+                      href={item.href}
                       onClick={() => setMobileMenuOpen(false)}
                       className="text-lg font-medium text-gray-900 hover:text-[#002366] transition-colors relative group inline-block"
                     >
-                      {item}
+                      {item.label}
                       <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#002366] transition-all duration-300 group-hover:w-full"></span>
                     </Link>
                   </div>

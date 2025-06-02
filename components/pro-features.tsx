@@ -6,10 +6,9 @@ import StaggeredAnimation from "@/components/animations/staggered-animation"
 export default function ProFeatures() {
   const features = [
     {
-      icon: Calendar,
-      title: "ÉVITEZ LES NO SHOWS",
-      description:
-        "Réduisez drastiquement les absences aux rendez-vous grâce à notre système de rappel automatique et d'acompte.",
+      icon: TrendingUp,
+      title: "BOOSTEZ VOTRE CHIFFRE D'AFFAIRES",
+      description: "Gagnez de nouveaux clients tous les mois et augmentez rapidement votre chiffre d'affaires.",
     },
     {
       icon: Eye,
@@ -17,9 +16,10 @@ export default function ProFeatures() {
       description: "Profitez d'une page dédiée à votre établissement et d'un accompagnement dans votre communication.",
     },
     {
-      icon: TrendingUp,
-      title: "BOOSTEZ VOTRE CHIFFRE D'AFFAIRES",
-      description: "Gagnez de nouveaux clients tous les mois et augmentez rapidement votre chiffre d'affaires.",
+      icon: Calendar,
+      title: "ÉVITEZ LES NO SHOWS",
+      description:
+        "Réduisez drastiquement les absences aux rendez-vous grâce à notre système de rappel automatique et d'acompte.",
     },
   ]
 
