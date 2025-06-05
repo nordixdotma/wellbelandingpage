@@ -52,7 +52,7 @@ export default function ClientSection() {
             <AnimatedElement animation="flipUp" delay={200} triggerOnce={false}>
               <div>
                 <h2 className="text-xl sm:text-3xl font-bold tracking-tight text-gray-900">
-                  LA BEAUTÉ À PORTÉE DE MAIN
+                  La beauté à portée de main
                 </h2>
                 <p className="mt-4 text-sm sm:text-lg text-gray-600">
                   Trouvez et réservez instantanément vos prestations beauté préférées, 24h/24 et 7j/7. Accédez aux

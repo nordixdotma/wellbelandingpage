@@ -77,7 +77,7 @@ export default function ContactForm() {
     <AnimatedElement animation="slideLeft" delay={200}>
       <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
         <div className="bg-gradient-to-br from-[#002366] to-[#003d99] p-3 sm:p-6">
-          <h3 className="text-lg sm:text-xl font-semibold text-white mb-1 sm:mb-2">Envoyez-nous un Message</h3>
+          <h3 className="text-lg sm:text-xl font-semibold text-white mb-1 sm:mb-2">Envoyez-nous un message</h3>
           <p className="text-white/80 text-xs sm:text-sm">
             Remplissez le formulaire ci-dessous et nous vous répondrons rapidement.
           </p>

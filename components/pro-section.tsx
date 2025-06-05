@@ -62,14 +62,14 @@ export default function ProSection() {
           <div className="space-y-6">
             <AnimatedElement animation="slideUp" delay={100} triggerOnce={false}>
               <div className="inline-block rounded-full px-4 py-2 text-xs font-semibold uppercase tracking-wider text-white bg-[#002366] mb-4">
-                PROFESSIONNELS DE LA BEAUTÉ
+                Professionnels de la beauté
               </div>
             </AnimatedElement>
 
             <AnimatedElement animation="flipUp" delay={300} triggerOnce={false}>
               <div>
                 <h2 className="text-xl sm:text-3xl font-bold tracking-tight text-gray-900">
-                  TRANSFORMEZ CHAQUE OPPORTUNITÉ EN RÉSERVATION
+                  Transformez chaque opportunité en réservation
                 </h2>
                 <p className="mt-4 text-sm sm:text-lg text-gray-600">
                   Notre plateforme vous connecte directement avec une clientèle qui recherche vos services à travers le

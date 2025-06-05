@@ -84,7 +84,7 @@ export default function Header() {
             <AnimatedElement animation="slideUp" delay={200} triggerOnce={false}>
               <nav className="hidden md:flex space-x-8">
                 {[
-                  { label: "Accueil", href: "#" },
+                  { label: "Accueil", href: "/" },
                   { label: "Professionnels", href: "#professionnels" },
                   { label: "Clients", href: "#clients" },
                   { label: "Pourquoi nous rejoindre?", href: "#pourquoi-rejoindre" },

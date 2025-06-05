@@ -7,17 +7,17 @@ export default function ProFeatures() {
   const features = [
     {
       icon: TrendingUp,
-      title: "BOOSTEZ VOTRE CHIFFRE D'AFFAIRES",
+      title: "Boostez votre chiffre d'affaires",
       description: "Gagnez de nouveaux clients tous les mois et augmentez rapidement votre chiffre d'affaires.",
     },
     {
       icon: Eye,
-      title: "SOYEZ ENCORE PLUS VISIBLE",
+      title: "Soyez encore plus visible",
       description: "Profitez d'une page dédiée à votre établissement et d'un accompagnement dans votre communication.",
     },
     {
       icon: Calendar,
-      title: "ÉVITEZ LES NO SHOWS",
+      title: "Évitez les no shows",
       description:
         "Réduisez drastiquement les absences aux rendez-vous grâce à notre système de rappel automatique et d'acompte.",
     },
@@ -29,18 +29,17 @@ export default function ProFeatures() {
         <div className="text-center mb-12">
           <AnimatedElement animation="slideUp" delay={100} triggerOnce={false}>
             <div className="inline-block rounded-full px-4 py-2 text-xs font-semibold uppercase tracking-wider text-white bg-[#002366] mb-4">
-              POUR LES PROFESSIONNELS
+              Pour les professionnels
             </div>
           </AnimatedElement>
           <AnimatedElement animation="flipUp" delay={200} triggerOnce={false}>
             <h2 className="text-xl sm:text-3xl font-bold text-gray-900 mb-4">
-              TRANSFORMEZ / FAITES DÉCOLLER VOTRE BUSINESS
+              Transformez / faites décoller votre business
             </h2>
           </AnimatedElement>
           <AnimatedElement animation="slideUp" delay={300} triggerOnce={false}>
             <p className="mt-4 max-w-3xl mx-auto text-sm sm:text-lg text-gray-600">
-              Rejoignez notre réseau de partenaire en avant-première et bénéficiez d'avantages exclusifs, réservés aux
-              100 premiers inscrits.
+              Boostez votre chiffre d'affaires, soyez encore plus visible, évitez les no shows.
             </p>
           </AnimatedElement>
         </div>
@@ -72,7 +71,7 @@ export default function ProFeatures() {
         <AnimatedElement animation="slideUp" delay={600} triggerOnce={false}>
           <div className="mt-12 text-center">
             <div className="mb-6">
-              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">Une Expérience Privilégiée</h3>
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">Une expérience privilégiée</h3>
               <p className="text-sm sm:text-base text-gray-600">
                 Inscrivez-vous pour un accès prioritaire et des avantages exclusifs dès le lancement.
               </p>
@@ -82,8 +81,8 @@ export default function ProFeatures() {
               className="btn-flip inline-flex justify-center items-center px-4 sm:px-6 py-2 sm:py-3 border border-transparent text-sm sm:text-base font-medium rounded-md text-white bg-[#002366] hover:bg-[#001c52] transition-colors"
             >
               <span className="btn-text-original">
-                <span className="hidden sm:inline">JE REJOINS EN AVANT-PREMIÈRE</span>
-                <span className="sm:hidden">REJOINDRE</span>
+                <span className="hidden sm:inline">Je rejoins en avant-première</span>
+                <span className="sm:hidden">Rejoindre</span>
               </span>
               <span className="btn-text-hover">
                 <span className="hidden sm:inline">Commencer maintenant</span>

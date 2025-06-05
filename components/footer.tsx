@@ -55,7 +55,7 @@ export default function Footer() {
 
           <AnimatedElement animation="slideRight" delay={200} triggerOnce={false}>
             <div>
-              <h3 className="text-lg font-semibold mb-4">Prêt À Transformer La Beauté Au Maroc ?</h3>
+              <h3 className="text-lg font-semibold mb-4">Prêt à transformer la beauté au Maroc ?</h3>
               <div className="flex flex-col space-y-3">
                 <Link
                   href="#clients"

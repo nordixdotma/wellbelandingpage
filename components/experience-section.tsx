@@ -7,18 +7,18 @@ export default function ExperienceSection() {
   const benefits = [
     {
       icon: Clock,
-      title: "UN MOMENT POUR SOI DE QUALITÉ",
+      title: "Un moment pour soi de qualité",
       description:
         "Trouvez les meilleurs établissements de beauté proches de chez vous en quelques secondes grâce à des avis 100% certifiés.",
     },
     {
       icon: CheckCircle,
-      title: "RÉSERVATION INSTANTANÉE",
+      title: "Réservation instantanée",
       description: "Prenez rendez-vous à tout moment, même en dehors des heures d'ouverture habituelles.",
     },
     {
       icon: Gift,
-      title: "BÉNÉFICIEZ D'OFFRES EXCLUSIVES",
+      title: "Bénéficiez d'offres exclusives",
       description: "Accédez à des promotions et réductions disponibles uniquement via notre plateforme.",
     },
   ]
@@ -28,7 +28,7 @@ export default function ExperienceSection() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <AnimatedElement animation="slideUp" delay={100} triggerOnce={false}>
           <div className="inline-block rounded-full px-4 py-2 text-xs font-semibold uppercase tracking-wider text-white bg-[#002366] mb-4">
-            UNE NOUVELLE EXPÉRIENCE BEAUTÉ
+            Une nouvelle expérience beauté
           </div>
         </AnimatedElement>
         <AnimatedElement animation="flipUp" delay={200} triggerOnce={false}>
@@ -68,8 +68,8 @@ export default function ExperienceSection() {
               className="btn-flip inline-flex justify-center items-center px-4 sm:px-6 py-2 sm:py-3 border border-transparent text-sm sm:text-base font-medium rounded-md text-white bg-[#002366] hover:bg-[#001c52] transition-colors"
             >
               <span className="btn-text-original">
-                <span className="hidden sm:inline">JE REJOINS EN AVANT-PREMIÈRE</span>
-                <span className="sm:hidden">REJOINDRE</span>
+                <span className="hidden sm:inline">Je rejoins en avant-première</span>
+                <span className="sm:hidden">Rejoindre</span>
               </span>
               <span className="btn-text-hover">
                 <span className="hidden sm:inline">Commencer maintenant</span>

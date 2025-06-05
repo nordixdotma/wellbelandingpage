@@ -25,7 +25,7 @@ export default function ContactHero() {
 
           <AnimatedElement animation="flipUp" delay={400}>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-6">
-              Parlons De Votre Projet
+              Parlons de votre projet
             </h1>
           </AnimatedElement>
         </div>

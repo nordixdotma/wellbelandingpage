@@ -21,19 +21,19 @@ export default function HeroSection() {
         <div className="max-w-2xl">
           <AnimatedElement animation="slideUp" delay={400}>
             <div className="inline-block rounded-full px-2 py-1 sm:px-3 sm:py-2 text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-white bg-[#002366] mb-6">
-              LA PREMIÈRE PLATEFORME BEAUTÉ AU MAROC
+              La première plateforme beauté au Maroc
             </div>
           </AnimatedElement>
 
           <AnimatedElement animation="flipUp" delay={600}>
             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-white tracking-tight mb-6">
-              La Beauté Simplifiée
+              La beauté simplifiée
             </h1>
           </AnimatedElement>
 
           <AnimatedElement animation="slideUp" delay={800}>
             <p className="text-sm sm:text-lg lg:text-xl text-white/90 mb-8 max-w-xl">
-              Réservez Vos Prestations Beauté En Quelques Clics. À Tout Moment. Chez Les Meilleurs Professionnels.
+              Réservez vos prestations beauté en quelques clics. À tout moment. Chez les meilleurs professionnels.
             </p>
           </AnimatedElement>
 

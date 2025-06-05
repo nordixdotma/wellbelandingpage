@@ -32,11 +32,11 @@ export default function RevolutionSection() {
         <div className="text-center mb-16">
           <AnimatedElement animation="slideUp" delay={100} triggerOnce={false}>
             <div className="inline-block rounded-full px-4 py-2 text-xs font-semibold uppercase tracking-wider text-white bg-[#002366] mb-4">
-              POURQUOI REJOINDRE WELLBE
+              Pourquoi rejoindre Wellbe
             </div>
           </AnimatedElement>
           <AnimatedElement animation="flipUp" delay={200} triggerOnce={false}>
-            <h2 className="text-xl sm:text-3xl font-bold text-gray-900">La Plateforme Pensée Pour Tous</h2>
+            <h2 className="text-xl sm:text-3xl font-bold text-gray-900">La plateforme pensée pour tous</h2>
           </AnimatedElement>
         </div>
 
