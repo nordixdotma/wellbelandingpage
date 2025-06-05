@@ -34,7 +34,7 @@ export default function ProFeatures() {
           </AnimatedElement>
           <AnimatedElement animation="flipUp" delay={200} triggerOnce={false}>
             <h2 className="text-xl sm:text-3xl font-bold text-gray-900 mb-4">
-              Transformez / faites décoller votre business
+              Transformez et faites décoller votre business
             </h2>
           </AnimatedElement>
           <AnimatedElement animation="slideUp" delay={300} triggerOnce={false}>
